@@ -25,6 +25,7 @@ function showProduct(product) {
   if (product.soldout) {
     copy.querySelector("article").classList.add("product_soldout");
   }
+  copy.querySelector(".readmore").setAttribute("href", `product.html?id=${product.id}`);
 
   // appende
 
