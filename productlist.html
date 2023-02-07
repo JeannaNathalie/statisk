@@ -17,8 +17,8 @@
 
     <main>
       <h1>APPAREL</12>
-
-      <div class="grid_1-1-1">
+        <div class="grid_1-1-1">
+        <template id="product_template">
         <article class="product">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Nike Round Neck Jersey" />
           <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
@@ -28,15 +28,17 @@
             <a href="product.html">Read More</a>
           </div>
         </article>
+    
 
-        <article class="product_disconted">
+
+        <!-- <article class="product_disconted">
           <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Cricket Jersey" />
           <h3>Blue T20 Indian Cricket Jersey</h3>
           <p class="brand"> T-shirt - Nike</p>
           <p class="price">Prev. DKK 1595,-</p>
           <div class="discounted">
-            <p>Now  DKK 1560,-</p>
-            <p> -34%</p>
+            <p> <span class="reduced">Now  DKK 1560,-</span> </p>
+            <p>  <span class="procent"> -34%   </span></p>
           </div>
 
           <div class="readmore">
@@ -54,44 +56,12 @@
             <a href="product.html">Read More</a>
           </div>
         </article>
-        <article class="product">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Nike Round Neck Jersey" />
-            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-            <p class="brand"> T-shirt - Nike</p>
-            <p class="price"> DKK 1595,-</p>
-            <div class="readmore">
-              <a href="product.html">Read More</a>
-            </div>
-          </article>
-  
-          <article class="product_disconted">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="Cricket Jersey" />
-            <h3>Blue T20 Indian Cricket Jersey</h3>
-            <p class="brand"> T-shirt - Nike</p>
-            <p class="price">Prev. DKK 1595,-</p>
-            <div class="discounted">
-              <p>Now  DKK 1560,-</p>
-              <p> -34%</p>
-            </div>
-  
-            <div class="readmore">
-              <a href="product.html">Read More</a>
-            </div>
-          </article>
-  
-          <article class="product_soldout">
-            <p class="soldout">Sold out</p>
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Mean Team Cricket Jersey" />
-            <h3>Blue T20 Indian Cricket Jersey</h3>
-            <p class="brand">T-shirt - Nike</p>
-            <p class="price">DKK 1595,-</p>
-            <div class="readmore">
-              <a href="product.html">Read More</a>
-            </div>
-          </article>
+        -->
           
-
+          </template>
+        </div>
       </div>
     </main>
+    <script src="/js/productlist.js"></script>
   </body>
 </html>
