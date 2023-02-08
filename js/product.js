@@ -13,7 +13,7 @@ function showProduct(product) {
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
-// {
+// INFO//
 //     "id": 1525,
 //     "gender": "Unisex",
 //     "category": "Accessories",

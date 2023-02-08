@@ -66,20 +66,46 @@ img {
 h3 {
   font-size: 30px;
   margin: 0%;
+  text-align: center;
 }
 
+.soldout {
+  position: absolute;
+  left: 0;
+  margin-top: 8%;
+  top: 0;
+  max-width: 10%;
+  max-height: 5%;
+  font-size: 30px;
+  color: rgb(248, 248, 236);
+  background-color: rgb(151, 151, 141);
+  padding: 1em;
+  z-index: 2;
+  border-radius: 6px;
+}
+
+.product {
+  position: relative;
+}
 .product_soldout img {
   opacity: 60%;
 }
 .brand {
   font-size: 25px;
   opacity: 50%;
+  text-align: center;
 }
 
 .price {
   font-size: 25px;
+  text-align: center;
 }
 
+.reduced {
+  font-size: 27px;
+  text-align: center;
+  color: red;
+}
 .discounted {
   font-size: 25px;
 }
@@ -94,15 +120,6 @@ h3 {
 
 .readmore {
   font-size: 20px;
-}
-
-.soldout {
-  position: absolute;
-  color: rgb(248, 248, 236);
-  background-color: rgb(151, 151, 141);
-  padding: 1em;
-  z-index: 2;
-  border-radius: 6px;
 }
 
 /* ____________________PRODUCT_____________________ */
@@ -167,4 +184,8 @@ h6 {
 p {
   margin-left: 7.5%;
   font-size: 20px;
+}
+
+.hide {
+  display: none;
 }

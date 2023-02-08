@@ -18,13 +18,26 @@ function showProduct(product) {
   // ændre indhold
   copy.querySelector("h3").textContent = product.productdisplayname;
   copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
-  copy.querySelector(".price").textContent = product.price;
-  copy.querySelector(".brand").textContent = product.brandname;
-  //   copy.querySelector("reduced").textContent = product.relid;
+  copy.querySelector(".price").textContent = "DKK" + " " + product.price + ",-";
+  copy.querySelector(".brand").textContent = product.brandname + " " + "-" + " " + product.articletype;
+
+  //discount pris
+
+  let deci_percent = product.discount / 100;
+  let discount = product.price * deci_percent;
+  let discountPrice = product.price - discount;
+  discountPrice = Math.round(discountPrice);
+
+  if (product.discount) {
+    copy.querySelector(".reduced").textContent = "NOW" + " " + discountPrice + ",-";
+    copy.querySelector(".price").textContent = "PREVIOUS" + " " + product.price + ",-";
+  }
 
   if (product.soldout) {
     copy.querySelector("article").classList.add("product_soldout");
+    copy.querySelector(".soldout").classList.remove("hide");
   }
+
   copy.querySelector(".readmore").setAttribute("href", `product.html?id=${product.id}`);
 
   // appende
@@ -32,17 +45,7 @@ function showProduct(product) {
   document.querySelector(".grid_1-1-1").appendChild(copy);
 }
 
-// <div class="grid_1-1-1">
-// <article class="product">
-//   <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Nike Round Neck Jersey" />
-//   <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-//   <p class="brand"> T-shirt - Nike</p>
-//   <p class="price"> DKK 1595,-</p>
-//   <div class="readmore">
-//     <a href="product.html">Read More</a>
-//   </div>
-// </article>
-// {
+//INFO//
 //     "id": 1163,
 //     "gender": "Men",
 //     "category": "Apparel",
